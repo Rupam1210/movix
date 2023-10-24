@@ -1,0 +1,24 @@
+@import "../../mixins.scss";
+.resultpage{
+    padding-top: 100px;
+    min-height: 90vh;
+    .title{
+        color: white;
+        font-size: 24px;
+        margin-bottom: 2rem;
+    }
+    .content{
+        display: flex;
+        flex-wrap:  wrap;
+        gap: 10px;
+        margin-bottom: 50px;
+        @include md{
+            gap: 20px;
+        }
+        .movieCard{
+            .posterBlock{
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

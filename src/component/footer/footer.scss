@@ -1,0 +1,80 @@
+@import "/src/mixins.scss";
+footer{
+    background-color: var(--black3);
+    color: white;
+    padding: 50px 0;
+    position: relative;
+    
+    .contentWrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .menuItems{
+        display: flex;
+        list-style: none;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        
+        @include md{
+            margin-bottom: 30px;
+            gap: 30px;
+        }
+        .menuItem{
+            font-size: 0.9rem;
+            cursor: pointer;
+             
+          
+            @include md{
+                font-size: 1.2rem;
+            }
+            &:hover{
+                color: var(--pink);
+                
+                
+            }
+        }
+
+    }
+    .infoText{
+        font-size: 0.7rem;
+        line-height: 20px;
+        text-align: center;
+        opacity: 0.5;
+        max-width: 800px;
+        margin: 1rem;
+        @include md{
+            font-size: 14px;
+            margin-bottom: 2rem;
+        }
+    }
+    .socialIcons{
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+        .icon{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--black);
+            cursor: pointer;
+             
+            &:hover{
+                color: var(--pink);
+                box-shadow: 0 0 0.645rem var(--pink);
+                transform: scale(1.1);
+
+            }
+            svg{
+                font-size: 1.4rem;
+            }
+            
+            
+        }
+    }
+}
